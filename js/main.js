@@ -21,7 +21,15 @@ while (counter <= 100) {
     counter++;
 }
 
-console.log(numbers);
+var list = '';
+
+for (var i = 0; i < numbers.length; i++) {
+    var item = numbers[i];
+
+    list += '<li>' + item + '</li>';
+}
+
+document.getElementById('item').innerHTML = list;
 
 // FOR
 
