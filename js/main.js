@@ -26,7 +26,7 @@ var list = '';
 for (var i = 0; i < numbers.length; i++) {
     var item = numbers[i];
 
-    list += '<li>' + item + '</li>';
+    list += '<li>' + '<span>' + item + '</span>' + '</li>';
 }
 
 document.getElementById('item').innerHTML = list;
